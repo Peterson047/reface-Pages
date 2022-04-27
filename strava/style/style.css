@@ -1,0 +1,173 @@
+:root {
+    --orange: #fc4c02;
+    --facebook: #3b5998;
+    --black: #242428;
+    --textfooter: #6d6d78;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 100px;
+    border-bottom: 1px solid #53535318;
+}
+
+button {
+    cursor: pointer;
+}
+
+.logo {
+    width: 110px;
+
+}
+
+.login-button {
+    padding: 7px 12px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.login-button:hover {
+    background: #ededee;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+h3 {
+    margin-top: 80px;
+    color: var(--orange);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+
+}
+
+.content {
+    display: flex;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    width: 100%;
+    display: inline-block;
+    max-width: 468px;
+    margin: 0 auto;
+
+
+}
+
+.btn {
+    background-position: 16px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    display: block;
+    font-size: 15px;
+    margin-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 16px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: background-color .1s ease, border-color .1s ease;
+    transition: background-color .1s ease, border-color .1s ease;
+}
+
+.btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.521);
+}
+
+.btn i {
+    width: 50px;
+    float: left;
+}
+
+.facebook-btn {
+    background: var(--facebook);
+    color: #fff;
+}
+
+.facebook-btn:hover {
+    background: #2f4b88;
+}
+
+.text {
+    display: flex;
+    font-size: 11px;
+    text-align: center;
+    line-height: 18px;
+    max-width: 468px;
+    margin-top: 3px;
+
+}
+
+footer {
+    background: var(--black);
+    height: 428px;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+
+footer img {
+    width: 100px;
+    margin-bottom: 35px;
+}
+
+footer p {
+    font-size: 11px;
+    color: var(--textfooter);
+    text-transform: none;
+}
+
+footer h5 {
+    margin-bottom: 30px;
+    font-size: 10px;
+    color: var(--textfooter);
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+    font-size: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    transition: .2s;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 16%;
+}
+
+.footer-container i {
+    margin-right: 15px;
+}
