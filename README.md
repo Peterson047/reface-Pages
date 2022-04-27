@@ -2,8 +2,8 @@
 # Reface-Pages | Treinamento de interfaces
 
 ### Projetos:
-[Strava Login Interface](https://peterson047.github.io/reface-Pages/strava/index.html)
-[TecnoFlix (Site sobre tecnologia inspirado na Netflix)](https://peterson047.github.io/Tecnoflix/index.html)
+- [Strava Login Interface](https://peterson047.github.io/reface-Pages/strava/index.html)
+- [TecnoFlix (Site sobre tecnologia inspirado na Netflix)](https://peterson047.github.io/Tecnoflix/index.html)
 
 #### Tecnologias utilizadas:
  - HTML5
