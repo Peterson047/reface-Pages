@@ -1,0 +1,63 @@
+:root {
+    --top-color: #f7f7f7;
+    --link-color: #3e3e3e;
+    --red: #ea1d2c;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 136px;
+    background-color: var(--top-color)
+}
+
+.logo {
+    width: 88px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 32px;
+    align-items: center;
+}
+
+
+
+header li {
+    list-style: none;
+    display: inline;
+    padding: 0px 5px;
+    font-size: 16px;
+
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.header-buttons button {
+    font-weight: bold;
+}
+
+.create-account {
+    font-size: 1rem;
+    background: none;
+    color: var(--red);
+
+}
+
+.login {
+    padding: 16px 29px;
+
+    border-radius: 6px;
+    background-color: #ea1d2c;
+    color: var(--top-color);
+}
