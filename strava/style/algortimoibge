@@ -1,0 +1,125 @@
+/
+
+programa {
+
+   funcao inicio() {
+
+       inteiro codigo_menor_cidade = 0
+
+       inteiro codigo_maior_cidade = 0
+
+       //real indice_menor_cidade = 0
+
+       inteiro indice_menor_cidade = 0
+
+       //real indice_maior_cidade = 0
+
+       inteiro indice_maior_cidade = 0        
+
+       inteiro soma_geral_de_veiculos = 0 //NOVO
+
+       //real media_de_veiculos_cidades = 0
+
+       real media_de_veiculos_cidades = 0.0                
+
+       inteiro soma_acidentes_menor_2000 = 0 //NOVO
+
+       //real media_de_acidentes_menor_2000 = 0
+
+       real media_de_acidentes_menor_2000 = 0.0
+
+       inteiro numero_cidades = 0
+
+       inteiro numero_cidades_veiculos_menor_200 = 0        
+
+       inteiro continuar_a_pedir_dados = 1
+
+       
+
+       enquanto(continuar_a_pedir_dados == 1) {
+
+           escreva("Insira o Codigo da Cidade diferente de 0: ")
+
+           inteiro codigo_digitado
+
+           leia(codigo_digitado)
+
+           
+
+           escreva("Insira numero veiculos de passeio: ")
+
+           inteiro veiculos_digitado
+
+           leia(veiculos_digitado)
+
+           
+
+           //escreva("Insira numero acidentes: ")
+
+           escreva("Insira número de acidentes de trânsito com vítimas: ")
+
+           inteiro acidentes_digitado
+
+           leia(acidentes_digitado)
+
+           
+
+           /*media_de_veiculos_cidades += veiculos_digitado*/
+
+           soma_geral_de_veiculos += veiculos_digitado
+
+           numero_cidades += 1            
+
+           se (acidentes_digitado < indice_menor_cidade ou indice_menor_cidade == 0) {
+
+               codigo_menor_cidade = codigo_digitado
+
+               indice_menor_cidade = acidentes_digitado
+
+           }
+
+           se (acidentes_digitado > indice_maior_cidade ou indice_maior_cidade == 0) {
+
+               codigo_maior_cidade = codigo_digitado
+
+               indice_maior_cidade = acidentes_digitado
+
+           }            
+
+           se (veiculos_digitado<2000) {
+
+               //media_de_acidentes_menor_2000 += veiculos_digitado
+
+               soma_acidentes_menor_2000 += veiculos_digitado
+
+               numero_cidades_veiculos_menor_200 +=1
+
+           }
+
+           
+
+           escreva("Para continuar digite 1: ")
+
+           leia(continuar_a_pedir_dados)
+
+       }
+
+       
+
+       media_de_veiculos_cidades = soma_geral_de_veiculos / numero_cidades
+
+       media_de_acidentes_menor_2000 =  soma_acidentes_menor_2000 / numero_cidades_veiculos_menor_200
+
+       
+
+       escreva("\nCodigo menor cidade: ", codigo_menor_cidade)
+
+       escreva("\nCodigo maior cidade: ", codigo_maior_cidade)
+
+       escreva("\nMedia de Veiculos: ", media_de_veiculos_cidades)
+
+       escreva("\nMedia de Veiculos Menor 2000: ", media_de_acidentes_menor_2000)
+
+   }
+
+}
